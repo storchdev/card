@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --rosewater: #f5e0dc;
+    --flamingo: #f2cdcd;
+    --pink: #f5c2e7;
+    --mauve: #cba6f7;
+    --red: #f38ba8;
+    --maroon: #eba0ac;
+    --peach: #fab387;
+    --yellow: #f9e2af;
+    --green: #a6e3a1;
+    --teal: #94e2d5;
+    --sky: #89dceb;
+    --sapphire: #74c7ec;
+    --blue: #89b4fa;
+    --lavender: #b4befe;
+    --text: #cdd6f4;
+    --subtext1: #bac2de;
+    --subtext0: #a6adc8;
+    --overlay2: #9399b2;
+    --overlay1: #090c1b;
+    --overlay0: #6c7086;
+    --surface2: #585b70;
+    --surface1: #45475a;
+    --surface0: #313244;
+    --base: #1e1e2e;
+    --mantle: #181825;
+    --crust: #11111b;
+}
+
+body {
+    background-color: var(--base);
+    margin: auto;
+    font-family: "Fira Mono", monospace;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    /* Ensures the container takes full viewport height */
+    padding: 20px;
+    /* Adds a gap around the edges */
+    box-sizing: border-box;
+    /* Includes padding in the element's total width/height */
+    /* background-color: #f9f9f9; */
+    /* Light background for better contrast */
+}
+
+/* Optional style for the profile card inside the container */
+.card {
+    width: 800px;
+    /* Sets a fixed width for the profile card */
+    padding: 20px;
+    /* Inner padding for the card */
+    border-radius: 20px;
+    /* Rounds the edges */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 0 100px var(--mauve),
+        0 0 20px var(--blue);
+    /* Add glow effect */
+    /* Subtle shadow for a lifted effect */
+    background-color: var(--surface0);
+    border: 1px solid var(--blue);
+    /* Background color for the card */
+    position: relative;
+}
+
+.command-line {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.chevron {
+    color: var(--green);
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.command-text {
+    color: var(--yellow);
+}
+
+.stormtorch-text {
+    color: var(--blue);
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.callme-text {
+    color: var(--subtext0);
+}
+
+.pronouns-text {
+    font-weight: bold;
+    color: var(--mauve);
+}
+
+.bio-text {
+    color: var(--lavender);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    /* absolute position top right of card */
+    position: absolute;
+    box-shadow: 0 0 20px var(--blue);
+    top: 50px;
+    right: 50px;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--green);
+}
+
+.window-container {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    border: 3px solid var(--green);
+    border-left: none;
+    border-right: none;
+    /* border-bottom: none; */
+    /* width: 100%; */
+    /* min-height: 100px; */
+}
+
+.hobbies-container,
+.socials-container {
+    flex: 1;
+}
+
+.hobbies-container {
+    border-right: 3px solid var(--green);
+}
+
+.hobbies {
+    margin-bottom: 20px;
+}
+
+.socials {
+    margin-left: 20px;
+}
+
+.hobby {
+    color: var(--peach);
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.plus {
+    color: var(--green);
+    font-weight: bold;
+}
+
+
+.socials img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.social-text {
+    color: var(--peach);
+    font-weight: bold;
+}
+
+.letter[data-color="rosewater"] {
+    color: var(--rosewater);
+}
+
+.letter[data-color="flamingo"] {
+    color: var(--flamingo);
+}
+
+.letter[data-color="pink"] {
+    color: var(--pink);
+}
+
+.letter[data-color="mauve"] {
+    color: var(--mauve);
+}
+
+.letter[data-color="red"] {
+    color: var(--red);
+}
+
+.letter[data-color="maroon"] {
+    color: var(--maroon);
+}
+
+.letter[data-color="peach"] {
+    color: var(--peach);
+}
+
+.letter[data-color="yellow"] {
+    color: var(--yellow);
+}
+
+.letter[data-color="green"] {
+    color: var(--green);
+}
+
+.letter[data-color="teal"] {
+    color: var(--teal);
+}
+
+.letter[data-color="sky"] {
+    color: var(--sky);
+}
+
+.letter[data-color="sapphire"] {
+    color: var(--sapphire);
+}
+
+.letter[data-color="blue"] {
+    color: var(--blue);
+}
+
+.letter[data-color="lavender"] {
+    color: var(--lavender);
+}
+
+/* .bio-text {
+    display: flex;
+} */
+
+.catppuccin {
+    display: inline-flex;
+    text-decoration: underline;
+    text-decoration-color: var(--lavender);
+    /* display: flex; */
+}
+
+.letter {
+    display: inline-block;
+}
