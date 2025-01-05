@@ -105,18 +105,36 @@ body {
     line-height: 1.5;
 }
 
-.avatar {
+/* .avatar {
     width: 150px;
     height: 150px;
     border-radius: 20px;
-    /* absolute position top right of card */
     position: absolute;
     box-shadow: 0 0 20px var(--blue);
     top: 30px;
     right: 30px;
+} */
+
+.avatar-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
 }
 
-hr {
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px var(--blue);
+}
+
+.pikachu {
+    width: 150px;
+    height: 150px;
+}
+
+
+*/ hr {
     border: 0;
     height: 2px;
     background-color: var(--green);
@@ -253,7 +271,7 @@ hr {
 }
 
 /* Mobile-specific styles */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .card {
         width: 100%;
         padding: 15px;
@@ -269,6 +287,17 @@ hr {
         height: 70px;
         top: 20px;
         right: 20px;
+    }
+
+    .pikachu {
+        width: 70px;
+        height: 70px;
+    }
+
+    .avatar-container {
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
     }
 
     .bio-text {
